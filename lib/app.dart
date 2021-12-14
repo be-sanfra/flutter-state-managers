@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:state_managers/pages/set_state_page.dart';
+import 'package:state_managers/pages/stream.dart';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -12,7 +12,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SetStatePage(),
+      home: const StreamPage(),
     );
   }
 }
