@@ -12,7 +12,7 @@ class _SetStatePageState extends State<SetStatePage> {
 
   void _incrementCounter() {
     setState(() {
-      _counter++;
+      ++_counter;
     });
   }
 
