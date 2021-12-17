@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:state_managers/models/counter.dart';
 
-class ProviderPage extends StatefulWidget {
+// class ProviderPage extends StatefulWidget {
+//   const ProviderPage({Key? key}) : super(key: key);
+//
+//   @override
+//   State<ProviderPage> createState() => _ProviderPageState();
+// }
+
+// class _ProviderPageState extends State<ProviderPage> {
+class ProviderPage extends StatelessWidget {
   const ProviderPage({Key? key}) : super(key: key);
-
-  @override
-  State<ProviderPage> createState() => _ProviderPageState();
-}
-
-class _ProviderPageState extends State<ProviderPage> {
 
   void _incrementCounter(BuildContext context) {
     // setState(() {
