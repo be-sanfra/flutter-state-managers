@@ -41,7 +41,7 @@ class ProviderPage extends StatelessWidget {
             Consumer<Counter>(
               builder: (contextConsumer, counter, child) => Text(
                 '${counter.value}',
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context).textTheme.headlineMedium,
               ),
             ),
           ],
