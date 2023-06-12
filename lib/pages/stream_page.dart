@@ -49,7 +49,7 @@ class _StreamPageState extends State<StreamPage> {
               builder: (contextStreamBuilder, snapshot) {
                 return Text(
                   '${snapshot.data}',
-                  style: Theme.of(context).textTheme.headline4,
+                  style: Theme.of(context).textTheme.headlineMedium,
                 );
               },
             ),
