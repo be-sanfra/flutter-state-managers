@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:state_managers/cubits/counter_cubit.dart';
 
-class CubitPage extends StatefulWidget {
+// class CubitPage extends StatefulWidget {
+//   const CubitPage({Key? key}) : super(key: key);
+//
+//   @override
+//   State<CubitPage> createState() => _CubitPageState();
+// }
+
+// class _CubitPageState extends State<CubitPage> {
+class CubitPage extends StatelessWidget {
   const CubitPage({Key? key}) : super(key: key);
-
-  @override
-  State<CubitPage> createState() => _CubitPageState();
-}
-
-class _CubitPageState extends State<CubitPage> {
 
   void _incrementCounter(BuildContext context) {
     // setState(() {
