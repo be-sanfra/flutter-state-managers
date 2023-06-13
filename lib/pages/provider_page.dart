@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:state_managers/models/counter.dart';
+import 'package:state_managers/providers/counter_provider.dart';
 
 // class ProviderPage extends StatefulWidget {
 //   const ProviderPage({Key? key}) : super(key: key);
@@ -17,7 +17,7 @@ class ProviderPage extends StatelessWidget {
     // setState(() {
     //   ++_counter;
     // });
-    var counter = context.read<Counter>();
+    var counter = context.read<CounterProvider>();
     counter.increment();
   }
 
@@ -35,11 +35,12 @@ class ProviderPage extends StatelessWidget {
               'You have pushed the button this many times:',
             ),
             // Text(
+            //   // '${context.watch<CounterProvider>().value}',
             //   '$_counter',
-            //   style: Theme.of(context).textTheme.headline4,
+            //   style: Theme.of(context).textTheme.headlineMedium,
             // ),
-            Consumer<Counter>(
-              builder: (contextConsumer, counter, child) => Text(
+            Consumer<CounterProvider>(
+              builder: (context, counter, child) => Text(
                 '${counter.value}',
                 style: Theme.of(context).textTheme.headlineMedium,
               ),

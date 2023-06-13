@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:state_managers/models/counter.dart';
+import 'package:state_managers/providers/counter_provider.dart';
 import 'package:state_managers/pages/provider_page.dart';
 
 class App extends StatelessWidget {
@@ -9,7 +9,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      create: (contextChangeNotifierProvider) => Counter(),
+      create: (_) => CounterProvider(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
