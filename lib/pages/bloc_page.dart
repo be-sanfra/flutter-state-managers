@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:state_managers/blocs/counter_bloc.dart';
 
-class BlocPage extends StatefulWidget {
+// class BlocPage extends StatefulWidget {
+//   const BlocPage({Key? key}) : super(key: key);
+//
+//   @override
+//   State<BlocPage> createState() => _BlocPageState();
+// }
+
+// class _BlocPageState extends State<BlocPage> {
+class BlocPage extends StatelessWidget {
   const BlocPage({Key? key}) : super(key: key);
-
-  @override
-  State<BlocPage> createState() => _BlocPageState();
-}
-
-class _BlocPageState extends State<BlocPage> {
 
   void _incrementCounter(BuildContext context) {
     // setState(() {
